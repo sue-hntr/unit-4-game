@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>unit-4-game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--my own css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">Collect Your Pollen!</h1>
+    <div class="card bee">
+            <img class="card-img-top" src="assets/images/honeybee.jpg" alt="Card image cap">
+          </div> <!--close card-->
+    <h4 class="text-left">
+        <p>
+            Queen Bee will give you a quota of nectar to collect at the start of the game.
+        </p>
+        <p>
+            By clicking on a flower, you will collect a specific amount of nectar points to your total score. 
+        </p>
+        <p>
+            Win the game by matching your quota without going over. The nectar value of each flower is hidden from you until you click on it. Each time you start a new round, the Queen will change the nectar value of each flower.
+        </p>
+    </h3>
+</div>
+
+<div class="container middle">
+        
+    
+    <div class="row">
+            <div class="scorebee">
+                <div class="card-body">
+                  <h5 class="card-title">Queen's Quota</h5>
+                  <h1><span id="quotanectar">
+                    100
+                  </span></h1>
+                </div>
+              </div> <!--close card-->
+
+            <div class="card flower" data-placement="0">
+                    <img class="card-img-top" src="assets/images/pinkflower.jpg" >
+              </div> <!--close card-->
+
+            <div class="card flower" data-placement="1">
+                <img class="card-img-top" src="assets/images/purpleflower.jpg" alt="Card image cap">
+            </div> <!--close card-->
+
+            <div class="card flower" data-placement="2">
+                    <img class="card-img-top" src="assets/images/yellowflower.jpg" alt="Card image cap">
+            </div> <!--close card-->
+
+            <div class="card flower" data-placement="3">
+                    <img class="card-img-top" src="assets/images/pansy.png" alt="Card image cap">
+            </div> <!--close card-->
+
+            <div class="yourscore">
+                    <div class="card-body">
+                      <h5 class="card-title">Your score this round</h5>
+                      <h1><span id="scorenectar">
+                        0
+                      </span></h1>
+                    </div>
+              </div> <!--close card-->
+
+                </div> <!--close row-->
+            </div>  <!--close container-->
+          </div>
+  <!-- Score board Bottom   -->
+  <div class="container">
+    <div class="scoreboard">
+        <div class="row">
+            <div class="col-2 child ">   </div>
+            <div class="col-4 child scorekeep1">
+              <p>
+                Number of Successful trips
+              </p>
+              <h1><span id="honeysuccess">
+                0
+              </span></h1>
+            </div>
+            <div class="col-4 child scorekeep2">
+              <p>
+                Trips that had no honey
+              </p>
+              <h1><span id="nohoney">
+                  0
+                </span></h1>
+            </div>
+            <div class="col-1 child "> </div>
+        </div>    
+
+    </div>
+ </div> 
+  <script src="assets/javascript/game.js"></script>
+</body>
+</html>
+≠≠

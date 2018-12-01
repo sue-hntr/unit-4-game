@@ -1,0 +1,60 @@
+.jumbotron{
+    background-color: #fff !important;
+    padding-bottom: 10px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%
+}
+
+.flower{
+    width: 150px; 
+    height:auto;
+}
+
+.bee{
+    width: 150px; 
+    height:auto;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.scorebee{
+    width: 150px; 
+    height:auto;
+    border: 5pt solid #339933;
+    border-radius: 50px;
+    height: 150px;
+    margin-right: 40px;
+}
+
+.yourscore{
+    width: 150px; 
+    height:auto;
+    border: 5pt solid #ffbf00;
+    border-radius: 50px;
+    height: 150px;
+    margin-left: 40px;
+}
+.scoreboard{
+    margin-top: 50px;
+    width: 100%
+}
+.scorekeep1{
+    border: #ffbf00  5pt solid;
+    height: 100px;
+    width: auto;
+    border-radius: 25px;
+    text-align: center;
+}
+.scorekeep2{
+    border:#996633  5pt solid;
+    height: 100px;
+    width: auto;
+    border-radius: 25px;
+    text-align: center;
+}
